@@ -4,4 +4,31 @@
 
 ;; CODE   =====================================
 
+looptop lda count
+        add one
+        out
+        sta count
+        sub const
+        brp endloop
+        bra looptop
+endloop hlt
+const   dat 10
+count   dat 0
+one     dat 1
+
+
+
+
 ;; OUTPUT =====================================
+
+00 LDA 09
+01 ADD 10
+02 OUT
+03 STA 09
+04 SUB 08
+05 BRP 07
+06 BRA 00
+07 HLT
+08 DAT 10
+09 DAT 00
+10 DAT 01
