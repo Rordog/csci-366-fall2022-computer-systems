@@ -260,7 +260,7 @@ Expected equality of these values:
 [----------] 39 tests from lmsm_machine_suite (0 ms total)
 
 [----------] Global test environment tear-down
-[==========] 39 tests from 1 test suite ran. (0 ms total)
+[==========] 39 tests from 1 test suite ran. (1 ms total)
 [  PASSED  ] 5 tests.
 [  FAILED  ] 34 tests, listed below:
 [  FAILED  ] lmsm_machine_suite.test_add_instruction_properly_caps_values
