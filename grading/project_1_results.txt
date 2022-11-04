@@ -142,7 +142,7 @@ Expected equality of these values:
     Which is: 3
   error_code::ERROR_EMPTY_STACK
     Which is: 1
-[  FAILED  ] lmsm_machine_suite.test_sadd_instruction_enters_error_state_if_not_enough_elts (0 ms)
+[  FAILED  ] lmsm_machine_suite.test_sadd_instruction_enters_error_state_if_not_enough_elts (1 ms)
 [ RUN      ] lmsm_machine_suite.test_ssub_instruction_subtracts_the_values_on_the_stack
 /home/parallels/autograder/csci-366-fall2022/grading/scripts/repos/rory_donley-lovato/c/lmsm/googletest/lmsm.cpp:213: Failure
 Expected equality of these values:
@@ -249,15 +249,15 @@ Expected equality of these values:
   0
 [  FAILED  ] lmsm_machine_suite.test_return_instruction_returns_to_address_on_top_of_call_stack (0 ms)
 [ RUN      ] lmsm_machine_suite.step_steps_to_the_next_instruction_and_executes_current
-/home/parallels/autograder/csci-366-fall2022/grading/scripts/repos/rory_donley-lovato/c/lmsm/googletest/lmsm.cpp:388: Failure
+/home/parallels/autograder/csci-366-fall2022/grading/scripts/repos/rory_donley-lovato/c/lmsm/googletest/lmsm.cpp:389: Failure
 Expected equality of these values:
-  the_machine->program_counter
+  the_machine->current_instruction
     Which is: 0
-  1
+  902
 [  FAILED  ] lmsm_machine_suite.step_steps_to_the_next_instruction_and_executes_current (0 ms)
 [ RUN      ] lmsm_machine_suite.step_does_not_step_to_the_next_instruction_and_execute_if_machine_is_halted
 [       OK ] lmsm_machine_suite.step_does_not_step_to_the_next_instruction_and_execute_if_machine_is_halted (0 ms)
-[----------] 39 tests from lmsm_machine_suite (0 ms total)
+[----------] 39 tests from lmsm_machine_suite (1 ms total)
 
 [----------] Global test environment tear-down
 [==========] 39 tests from 1 test suite ran. (1 ms total)
