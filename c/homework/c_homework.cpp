@@ -4,6 +4,27 @@ char * print_binary_representation(unsigned int i, char *buffer){
     buffer[0] = '0';
     buffer[1] = 'b';
     // fill out remaining 32 bits, 1 or 0 depending on the value in the number i
+    unsigned int mask = 1;
+
+    for (int j = 0; j < 32; ++j){
+
+        int mask_result = i & mask;
+        if(mask_result) {
+            buffer[j + 2] = '1';
+        } else {
+            buffer[j + 2] = '0';
+        }
+        mask = mask << 1;
+    }
+    char temp;
+    int length = strlen(buffer);
+    int j = length - 1;
+    for (i = 2; i <= (length -1)/2; i++){
+        temp = buffer[i];
+        buffer[i] = buffer[j];
+        buffer[j] = temp;
+        j--;
+    }
     return buffer;
 }
 
@@ -37,14 +58,14 @@ struct Person {
     int age;
 };
 
-void set_my_age(struct Person p) {
-    p.age = 44;
+int set_my_age() {
+    return 44;
 }
 
 int get_my_age() {
     struct Person me;
     me.name = "Carson";
-    set_my_age(me);
+    me.age = set_my_age();
     return me.age;
 }
 
