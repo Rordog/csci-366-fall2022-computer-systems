@@ -134,7 +134,7 @@ Expected equality of these values:
   the_machine->accumulator->value
     Which is: 500
   999
-[  FAILED  ] lmsm_machine_suite.test_sadd_instruction_properly_caps_values (0 ms)
+[  FAILED  ] lmsm_machine_suite.test_sadd_instruction_properly_caps_values (1 ms)
 [ RUN      ] lmsm_machine_suite.test_sadd_instruction_enters_error_state_if_not_enough_elts
 /home/parallels/autograder/csci-366-fall2022/grading/scripts/repos/rory_donley-lovato/c/lmsm/googletest/lmsm.cpp:204: Failure
 Expected equality of these values:
@@ -233,7 +233,7 @@ Expected equality of these values:
     Which is: 3
   error_code::ERROR_EMPTY_STACK
     Which is: 1
-[  FAILED  ] lmsm_machine_suite.test_sdiv_instruction_enters_error_state_if_not_enough_elts (1 ms)
+[  FAILED  ] lmsm_machine_suite.test_sdiv_instruction_enters_error_state_if_not_enough_elts (0 ms)
 [ RUN      ] lmsm_machine_suite.test_call_instruction_pushes_next_address_onto_stack
 /home/parallels/autograder/csci-366-fall2022/grading/scripts/repos/rory_donley-lovato/c/lmsm/googletest/lmsm.cpp:349: Failure
 Expected equality of these values:
