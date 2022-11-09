@@ -77,7 +77,7 @@ Expected equality of these values:
   the_machine->output_buffer
     Which is: ""
   "10 10 "
-[  FAILED  ] lmsm_machine_suite.test_output_instruction (1 ms)
+[  FAILED  ] lmsm_machine_suite.test_output_instruction (0 ms)
 [ RUN      ] lmsm_machine_suite.test_halt_instruction
 /home/parallels/autograder/csci-366-fall2022/grading/scripts/repos/rory_donley-lovato/c/lmsm/googletest/lmsm.cpp:126: Failure
 Expected equality of these values:
@@ -233,7 +233,7 @@ Expected equality of these values:
     Which is: 3
   error_code::ERROR_EMPTY_STACK
     Which is: 1
-[  FAILED  ] lmsm_machine_suite.test_sdiv_instruction_enters_error_state_if_not_enough_elts (0 ms)
+[  FAILED  ] lmsm_machine_suite.test_sdiv_instruction_enters_error_state_if_not_enough_elts (1 ms)
 [ RUN      ] lmsm_machine_suite.test_call_instruction_pushes_next_address_onto_stack
 /home/parallels/autograder/csci-366-fall2022/grading/scripts/repos/rory_donley-lovato/c/lmsm/googletest/lmsm.cpp:349: Failure
 Expected equality of these values:
