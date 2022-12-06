@@ -70,7 +70,7 @@ Expected equality of these values:
   result->error
     Which is: NULL
   ASM_ERROR_UNKNOWN_INSTRUCTION
-    Which is: 0xaaaad5cfa0f8
+    Which is: 0xaaaab860a0f8
 [  FAILED  ] parsing_tests.unknown_instruction_is_handled (0 ms)
 [ RUN      ] parsing_tests.no_argument_for_instruction_causes_error
 /home/parallels/autograder/csci-366-fall2022/grading/scripts/repos/rory_donley-lovato/c/lmsm/googletest/assembler.cpp:127: Failure
@@ -78,7 +78,7 @@ Expected equality of these values:
   result->error
     Which is: NULL
   ASM_ERROR_ARG_REQUIRED
-    Which is: 0xaaaad5cfa110
+    Which is: 0xaaaab860a110
 [  FAILED  ] parsing_tests.no_argument_for_instruction_causes_error (0 ms)
 [ RUN      ] parsing_tests.numbers_out_of_machine_range_cause_error
 /home/parallels/autograder/csci-366-fall2022/grading/scripts/repos/rory_donley-lovato/c/lmsm/googletest/assembler.cpp:134: Failure
@@ -86,7 +86,7 @@ Expected equality of these values:
   result->error
     Which is: NULL
   ASM_ERROR_OUT_OF_RANGE
-    Which is: 0xaaaad5cfa138
+    Which is: 0xaaaab860a138
 [  FAILED  ] parsing_tests.numbers_out_of_machine_range_cause_error (0 ms)
 [ RUN      ] parsing_tests.negative_numbers_out_of_machine_range_are_capped_properly
 /home/parallels/autograder/csci-366-fall2022/grading/scripts/repos/rory_donley-lovato/c/lmsm/googletest/assembler.cpp:141: Failure
@@ -94,7 +94,7 @@ Expected equality of these values:
   result->error
     Which is: NULL
   ASM_ERROR_OUT_OF_RANGE
-    Which is: 0xaaaad5cfa138
+    Which is: 0xaaaab860a138
 [  FAILED  ] parsing_tests.negative_numbers_out_of_machine_range_are_capped_properly (0 ms)
 [----------] 10 tests from parsing_tests (0 ms total)
 
@@ -280,7 +280,7 @@ Expected equality of these values:
   result->error
     Which is: NULL
   ASM_ERROR_BAD_LABEL
-    Which is: 0xaaaad5cfa128
+    Which is: 0xaaaab860a128
 [  FAILED  ] code_generation.bad_label_causes_error (0 ms)
 [----------] 28 tests from code_generation (0 ms total)
 
@@ -329,7 +329,7 @@ Expected equality of these values:
 [ RUN      ] lmsm_machine_suite.test_halt_instruction
 [       OK ] lmsm_machine_suite.test_halt_instruction (0 ms)
 [ RUN      ] lmsm_machine_suite.test_load_immediate_instruction
-[       OK ] lmsm_machine_suite.test_load_immediate_instruction (0 ms)
+[       OK ] lmsm_machine_suite.test_load_immediate_instruction (1 ms)
 [ RUN      ] lmsm_machine_suite.test_push_instruction
 [       OK ] lmsm_machine_suite.test_push_instruction (0 ms)
 [ RUN      ] lmsm_machine_suite.test_pop_instruction_removes_top_of_stack
@@ -378,10 +378,10 @@ Expected equality of these values:
 [       OK ] lmsm_machine_suite.step_steps_to_the_next_instruction_and_executes_current (0 ms)
 [ RUN      ] lmsm_machine_suite.step_does_not_step_to_the_next_instruction_and_execute_if_machine_is_halted
 [       OK ] lmsm_machine_suite.step_does_not_step_to_the_next_instruction_and_execute_if_machine_is_halted (0 ms)
-[----------] 39 tests from lmsm_machine_suite (0 ms total)
+[----------] 39 tests from lmsm_machine_suite (1 ms total)
 
 [----------] Global test environment tear-down
-[==========] 82 tests from 5 test suites ran. (0 ms total)
+[==========] 82 tests from 5 test suites ran. (1 ms total)
 [  PASSED  ] 43 tests.
 [  FAILED  ] 39 tests, listed below:
 [  FAILED  ] instruction_construction.make_instruction_basic_instruction_fields_are_set
