@@ -15,7 +15,7 @@ Expected equality of these values:
   instruction->slots
     Which is: 0
   2
-[  FAILED  ] instruction_construction.make_instruction_spushi_takes_two_slots (1 ms)
+[  FAILED  ] instruction_construction.make_instruction_spushi_takes_two_slots (0 ms)
 [ RUN      ] instruction_construction.make_instruction_call_takes_three_slots
 /home/parallels/autograder/csci-366-fall2022/grading/scripts/repos/rory_donley-lovato/c/lmsm/googletest/assembler.cpp:31: Failure
 Expected equality of these values:
@@ -25,7 +25,7 @@ Expected equality of these values:
 [  FAILED  ] instruction_construction.make_instruction_call_takes_three_slots (0 ms)
 [ RUN      ] instruction_construction.make_instruction_properly_offsets_based_on_preceding_instruction
 [       OK ] instruction_construction.make_instruction_properly_offsets_based_on_preceding_instruction (0 ms)
-[----------] 4 tests from instruction_construction (1 ms total)
+[----------] 4 tests from instruction_construction (0 ms total)
 
 [----------] 10 tests from parsing_tests
 [ RUN      ] parsing_tests.simple_instruction_parsing_works
@@ -70,7 +70,7 @@ Expected equality of these values:
   result->error
     Which is: NULL
   ASM_ERROR_UNKNOWN_INSTRUCTION
-    Which is: 0xaaaacd02a0f8
+    Which is: 0xaaaac02ea0f8
 [  FAILED  ] parsing_tests.unknown_instruction_is_handled (0 ms)
 [ RUN      ] parsing_tests.no_argument_for_instruction_causes_error
 /home/parallels/autograder/csci-366-fall2022/grading/scripts/repos/rory_donley-lovato/c/lmsm/googletest/assembler.cpp:127: Failure
@@ -78,7 +78,7 @@ Expected equality of these values:
   result->error
     Which is: NULL
   ASM_ERROR_ARG_REQUIRED
-    Which is: 0xaaaacd02a110
+    Which is: 0xaaaac02ea110
 [  FAILED  ] parsing_tests.no_argument_for_instruction_causes_error (0 ms)
 [ RUN      ] parsing_tests.numbers_out_of_machine_range_cause_error
 /home/parallels/autograder/csci-366-fall2022/grading/scripts/repos/rory_donley-lovato/c/lmsm/googletest/assembler.cpp:134: Failure
@@ -86,7 +86,7 @@ Expected equality of these values:
   result->error
     Which is: NULL
   ASM_ERROR_OUT_OF_RANGE
-    Which is: 0xaaaacd02a138
+    Which is: 0xaaaac02ea138
 [  FAILED  ] parsing_tests.numbers_out_of_machine_range_cause_error (0 ms)
 [ RUN      ] parsing_tests.negative_numbers_out_of_machine_range_are_capped_properly
 /home/parallels/autograder/csci-366-fall2022/grading/scripts/repos/rory_donley-lovato/c/lmsm/googletest/assembler.cpp:141: Failure
@@ -94,7 +94,7 @@ Expected equality of these values:
   result->error
     Which is: NULL
   ASM_ERROR_OUT_OF_RANGE
-    Which is: 0xaaaacd02a138
+    Which is: 0xaaaac02ea138
 [  FAILED  ] parsing_tests.negative_numbers_out_of_machine_range_are_capped_properly (0 ms)
 [----------] 10 tests from parsing_tests (0 ms total)
 
@@ -280,7 +280,7 @@ Expected equality of these values:
   result->error
     Which is: NULL
   ASM_ERROR_BAD_LABEL
-    Which is: 0xaaaacd02a128
+    Which is: 0xaaaac02ea128
 [  FAILED  ] code_generation.bad_label_causes_error (0 ms)
 [----------] 28 tests from code_generation (0 ms total)
 
@@ -381,7 +381,7 @@ Expected equality of these values:
 [----------] 39 tests from lmsm_machine_suite (0 ms total)
 
 [----------] Global test environment tear-down
-[==========] 82 tests from 5 test suites ran. (1 ms total)
+[==========] 82 tests from 5 test suites ran. (0 ms total)
 [  PASSED  ] 43 tests.
 [  FAILED  ] 39 tests, listed below:
 [  FAILED  ] instruction_construction.make_instruction_basic_instruction_fields_are_set
