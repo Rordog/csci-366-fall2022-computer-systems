@@ -181,5 +181,5 @@ Running main() from /home/parallels/autograder/csci-366-fall2022/grading/scripts
 [----------] 39 tests from lmsm_machine_suite (0 ms total)
 
 [----------] Global test environment tear-down
-[==========] 82 tests from 5 test suites ran. (1 ms total)
+[==========] 82 tests from 5 test suites ran. (0 ms total)
 [  PASSED  ] 82 tests.
